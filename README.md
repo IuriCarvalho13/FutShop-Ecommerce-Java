@@ -113,3 +113,6 @@ Abra o terminal na pasta raiz do projeto (`FutShop-Ecommerce-Java`) e inicie a a
 ```bash
 cd backend
 mvn spring-boot:run
+```
+
+Abra o arquivo ```index.html``` usando a extensão Live Server do VS Code.

@@ -84,23 +84,21 @@ Este passo a passo é específico para configurar o **Maven** no Windows, garant
 
 ### 1. Configuração do Banco de Dados
 
-1.  Crie um banco de dados no seu MySQL Server com o nome `futshop_db`.
+1.  Entre na pasta database dentro do repositorio e copie o conteudo dentro do arquivo ```schema.sql```. 
+
+2.  Cole o conteudo dentro do Workbench.
+    
+3.  Crie um banco de dados no seu MySQL Server com o nome `futshop_db`.
     ```sql
     CREATE DATABASE futshop_db;
     ```
-2.  Atualize as credenciais no arquivo `backend/src/main/resources/application.properties`:
+4.  Atualize as credenciais no arquivo `backend/src/main/resources/application.properties`:
 
     ```properties
     spring.datasource.username=root
     spring.datasource.password=SUA_SENHA_MYSQL
     ```
     *(Substitua `SUA_SENHA_MYSQL` pela sua senha real)*
-
-### 2. Inicialização dos Dados
-
-O projeto está configurado para inicializar a tabela `produto` e inserir os dados iniciais automaticamente usando o arquivo `data.sql` na primeira vez que o Spring Boot rodar no modo `ddl-auto=update`.
-
----
 
 ## ▶️ Como Executar a Aplicação
 

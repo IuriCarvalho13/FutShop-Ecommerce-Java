@@ -99,6 +99,7 @@ Este passo a passo é específico para configurar o **Maven** no Windows, garant
     spring.datasource.password=SUA_SENHA_MYSQL
     ```
     *(Substitua `SUA_SENHA_MYSQL` pela sua senha real)*
+    
 
 ## ▶️ Como Executar a Aplicação
 
